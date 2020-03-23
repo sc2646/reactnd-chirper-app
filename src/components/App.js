@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { handleInitialData } from '../actions/shared'
+import Dashbroad from './Dashbroad'
 
 class App extends Component {
   componentDidMount() {
@@ -9,9 +10,18 @@ class App extends Component {
   render() {
     return (
       <div>
-        Starter Code
+        {this.props.loading === true
+          ? null
+          : <Dashbroad />}
+
       </div>
     )
+  }
+}
+
+function mapStateToProps({ authedUser }) {
+  return {
+    loading: authedUser === null
   }
 }
 
