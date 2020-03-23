@@ -1,10 +1,10 @@
 # Chirper Project
 A project that mimics twitter, built using React and Redux.
 
-Dashbroad to show timeline
+### Dashbroad to show timeline
 ![dashbroad](/images/dashbroad.png)
 
-Tweet and replies
+### Tweet and replies
 ![tweet](images/tweet.png)
 
 
